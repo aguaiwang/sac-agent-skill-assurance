@@ -1,0 +1,80 @@
+{"case_id":"crg-p01","skill":"change-request-risk-gate","label":"positive","split":"calibration","query":"risk gate a change request before execution","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p02","skill":"change-request-risk-gate","label":"positive","split":"calibration","query":"assess approval risk for this configuration change","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p03","skill":"change-request-risk-gate","label":"positive","split":"calibration","query":"can this change be allowed to execute","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p04","skill":"change-request-risk-gate","label":"positive","split":"calibration","query":"run the change request safety gate","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p05","skill":"change-request-risk-gate","label":"positive","split":"calibration","query":"check policy and authority for a change","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p06","skill":"change-request-risk-gate","label":"positive","split":"blind","query":"pre-execution risk decision for the requested change","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p07","skill":"change-request-risk-gate","label":"positive","split":"blind","query":"gate this high risk change request","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-p08","skill":"change-request-risk-gate","label":"positive","split":"blind","query":"validate whether the requested change may proceed","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-n01","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"summarize the current change request","expected_skill":null}
+{"case_id":"crg-n02","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"what is the status of the change","expected_skill":null}
+{"case_id":"crg-n03","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"explain this change in plain language","expected_skill":null}
+{"case_id":"crg-n04","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"list change request history","expected_skill":null}
+{"case_id":"crg-n05","skill":"change-request-risk-gate","label":"negative","split":"blind","query":"show the change owner","expected_skill":null}
+{"case_id":"crg-n06","skill":"change-request-risk-gate","label":"negative","split":"blind","query":"when was this change created","expected_skill":null}
+{"case_id":"crg-n07","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"translate the change note","expected_skill":null}
+{"case_id":"crg-n08","skill":"change-request-risk-gate","label":"negative","split":"calibration","query":"compare two prose descriptions","expected_skill":null}
+{"case_id":"crg-x01","skill":"change-request-risk-gate","label":"near_neighbor","split":"calibration","query":"review the change risks and decide whether execution is safe","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-x02","skill":"change-request-risk-gate","label":"near_neighbor","split":"calibration","query":"do not merely summarize; make a change gate decision","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-x03","skill":"change-request-risk-gate","label":"near_neighbor","split":"blind","query":"is approval sufficient to allow this change","expected_skill":"change-request-risk-gate"}
+{"case_id":"crg-x04","skill":"change-request-risk-gate","label":"near_neighbor","split":"blind","query":"check whether this change must be blocked","expected_skill":"change-request-risk-gate"}
+{"case_id":"crr-p01","skill":"change-request-review","label":"positive","split":"calibration","query":"review this change request and explain the findings","expected_skill":"change-request-review"}
+{"case_id":"crr-p02","skill":"change-request-review","label":"positive","split":"calibration","query":"give a detailed review of the pending change","expected_skill":"change-request-review"}
+{"case_id":"crr-p03","skill":"change-request-review","label":"positive","split":"calibration","query":"compare the proposed change with its baseline","expected_skill":"change-request-review"}
+{"case_id":"crr-p04","skill":"change-request-review","label":"positive","split":"calibration","query":"explain the impact of this change request","expected_skill":"change-request-review"}
+{"case_id":"crr-p05","skill":"change-request-review","label":"positive","split":"calibration","query":"inspect the change evidence and provide review","expected_skill":"change-request-review"}
+{"case_id":"crr-p06","skill":"change-request-review","label":"positive","split":"blind","query":"what should I know before approving this change","expected_skill":"change-request-review"}
+{"case_id":"crr-p07","skill":"change-request-review","label":"positive","split":"blind","query":"analyze this configuration change for me","expected_skill":"change-request-review"}
+{"case_id":"crr-p08","skill":"change-request-review","label":"positive","split":"blind","query":"full review of the requested change","expected_skill":"change-request-review"}
+{"case_id":"crr-n01","skill":"change-request-review","label":"negative","split":"calibration","query":"execute the approved change now","expected_skill":null}
+{"case_id":"crr-n02","skill":"change-request-review","label":"negative","split":"calibration","query":"open a new change request","expected_skill":null}
+{"case_id":"crr-n03","skill":"change-request-review","label":"negative","split":"calibration","query":"show service uptime","expected_skill":null}
+{"case_id":"crr-n04","skill":"change-request-review","label":"negative","split":"calibration","query":"what time is it","expected_skill":null}
+{"case_id":"crr-n05","skill":"change-request-review","label":"negative","split":"blind","query":"send a notification to the owner","expected_skill":null}
+{"case_id":"crr-n06","skill":"change-request-review","label":"negative","split":"blind","query":"list all users","expected_skill":null}
+{"case_id":"crr-n07","skill":"change-request-review","label":"negative","split":"calibration","query":"restart the application","expected_skill":null}
+{"case_id":"crr-n08","skill":"change-request-review","label":"negative","split":"calibration","query":"calculate a sum","expected_skill":null}
+{"case_id":"crr-x01","skill":"change-request-review","label":"near_neighbor","split":"calibration","query":"review risks but do not make an execution gate decision","expected_skill":"change-request-review"}
+{"case_id":"crr-x02","skill":"change-request-review","label":"near_neighbor","split":"calibration","query":"explain why the change may be risky","expected_skill":"change-request-review"}
+{"case_id":"crr-x03","skill":"change-request-review","label":"near_neighbor","split":"blind","query":"look over the change prior to my own decision","expected_skill":"change-request-review"}
+{"case_id":"crr-x04","skill":"change-request-review","label":"near_neighbor","split":"blind","query":"provide a review, not an approval outcome","expected_skill":"change-request-review"}
+{"case_id":"dpg-p01","skill":"dispatch-plan-risk-gate","label":"positive","split":"calibration","query":"risk gate this dispatch plan before activation","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p02","skill":"dispatch-plan-risk-gate","label":"positive","split":"calibration","query":"check whether the dispatch plan can activate safely","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p03","skill":"dispatch-plan-risk-gate","label":"positive","split":"calibration","query":"make a pre-approval decision for the dispatch schedule","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p04","skill":"dispatch-plan-risk-gate","label":"positive","split":"calibration","query":"validate the dispatch plan risk gate","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p05","skill":"dispatch-plan-risk-gate","label":"positive","split":"calibration","query":"decide if this battery dispatch may proceed","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p06","skill":"dispatch-plan-risk-gate","label":"positive","split":"blind","query":"gate the candidate dispatch prior to approval","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p07","skill":"dispatch-plan-risk-gate","label":"positive","split":"blind","query":"block or allow this dispatch plan by policy","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-p08","skill":"dispatch-plan-risk-gate","label":"positive","split":"blind","query":"evaluate dispatch activation constraints","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-n01","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"show current state of charge","expected_skill":null}
+{"case_id":"dpg-n02","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"show dispatch plan history","expected_skill":null}
+{"case_id":"dpg-n03","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"calculate yesterday savings","expected_skill":null}
+{"case_id":"dpg-n04","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"what is the weather forecast","expected_skill":null}
+{"case_id":"dpg-n05","skill":"dispatch-plan-risk-gate","label":"negative","split":"blind","query":"describe battery chemistry","expected_skill":null}
+{"case_id":"dpg-n06","skill":"dispatch-plan-risk-gate","label":"negative","split":"blind","query":"list devices","expected_skill":null}
+{"case_id":"dpg-n07","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"change the display theme","expected_skill":null}
+{"case_id":"dpg-n08","skill":"dispatch-plan-risk-gate","label":"negative","split":"calibration","query":"say hello","expected_skill":null}
+{"case_id":"dpg-x01","skill":"dispatch-plan-risk-gate","label":"near_neighbor","split":"calibration","query":"review dispatch risks and make an activation decision","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-x02","skill":"dispatch-plan-risk-gate","label":"near_neighbor","split":"calibration","query":"is the schedule safe enough to activate","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-x03","skill":"dispatch-plan-risk-gate","label":"near_neighbor","split":"blind","query":"do not explain only; gate the proposed dispatch","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpg-x04","skill":"dispatch-plan-risk-gate","label":"near_neighbor","split":"blind","query":"assess whether approval of this plan should be denied","expected_skill":"dispatch-plan-risk-gate"}
+{"case_id":"dpr-p01","skill":"dispatch-plan-review","label":"positive","split":"calibration","query":"review the candidate dispatch plan in detail","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p02","skill":"dispatch-plan-review","label":"positive","split":"calibration","query":"explain this dispatch schedule and its constraints","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p03","skill":"dispatch-plan-review","label":"positive","split":"calibration","query":"compare the proposed dispatch against the active plan","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p04","skill":"dispatch-plan-review","label":"positive","split":"calibration","query":"analyze a battery dispatch candidate","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p05","skill":"dispatch-plan-review","label":"positive","split":"calibration","query":"help me understand this pending dispatch plan","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p06","skill":"dispatch-plan-review","label":"positive","split":"blind","query":"full review of a dispatch candidate","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p07","skill":"dispatch-plan-review","label":"positive","split":"blind","query":"explain the plan delta for this dispatch","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-p08","skill":"dispatch-plan-review","label":"positive","split":"blind","query":"inspect dispatch evidence and summarize findings","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-n01","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"activate the plan now","expected_skill":null}
+{"case_id":"dpr-n02","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"create a new dispatch plan","expected_skill":null}
+{"case_id":"dpr-n03","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"what is the SOC","expected_skill":null}
+{"case_id":"dpr-n04","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"show savings total","expected_skill":null}
+{"case_id":"dpr-n05","skill":"dispatch-plan-review","label":"negative","split":"blind","query":"show historical plans","expected_skill":null}
+{"case_id":"dpr-n06","skill":"dispatch-plan-review","label":"negative","split":"blind","query":"update my profile","expected_skill":null}
+{"case_id":"dpr-n07","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"send a message","expected_skill":null}
+{"case_id":"dpr-n08","skill":"dispatch-plan-review","label":"negative","split":"calibration","query":"reset the service","expected_skill":null}
+{"case_id":"dpr-x01","skill":"dispatch-plan-review","label":"near_neighbor","split":"calibration","query":"review dispatch risk without making an activation decision","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-x02","skill":"dispatch-plan-review","label":"near_neighbor","split":"calibration","query":"explain why this schedule might be risky","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-x03","skill":"dispatch-plan-review","label":"near_neighbor","split":"blind","query":"look over the proposed dispatch before I decide","expected_skill":"dispatch-plan-review"}
+{"case_id":"dpr-x04","skill":"dispatch-plan-review","label":"near_neighbor","split":"blind","query":"provide dispatch review rather than approval","expected_skill":"dispatch-plan-review"}

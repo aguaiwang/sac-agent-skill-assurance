@@ -1,0 +1,7 @@
+skill: {name: change-request-risk-gate, risk_tier: high}
+capabilities: {allow: [read, review], require_approval: [execute], deny: [database.direct_write, external.side_effect]}
+authority: {precedence: [DOMAIN_RUNTIME, VALIDATOR, POLICY_GATE, TRUSTED_EVIDENCE, GENERATIVE_REASONING]}
+evidence: {required_for: [domain_fact, identifier_fact], abstain_on_unsupported: true}
+trajectory: {required_before: {change.execute: [validation.pass, risk_gate.allow, human_approval.valid]}}
+approval: {ttl_seconds: 900, bind_subject_version: true, bind_arguments: true}
+execution: {mode: enforce}

@@ -1,0 +1,7 @@
+skill: {name: change-request-review, risk_tier: medium}
+capabilities: {allow: [read, review, evidence.search], require_approval: [], deny: [execute, database.direct_write]}
+authority: {precedence: [DOMAIN_RUNTIME, VALIDATOR, POLICY_GATE, TRUSTED_EVIDENCE, GENERATIVE_REASONING]}
+evidence: {required_for: [domain_fact, identifier_fact], abstain_on_unsupported: true}
+trajectory: {required_before: {}}
+approval: {ttl_seconds: 0, bind_subject_version: true, bind_arguments: true}
+execution: {mode: enforce}
