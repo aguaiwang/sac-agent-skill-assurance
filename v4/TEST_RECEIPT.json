@@ -1,0 +1,55 @@
+{
+  "scope": "本轮精修源码测试；最终ZIP解压复测的外部收据随交付提供",
+  "public_tests": {
+    "passed": 330,
+    "failed": 0
+  },
+  "examples": {
+    "passed": 4,
+    "total": 4
+  },
+  "extra_custom_domain": "PASS",
+  "registry_v3": "PASS",
+  "registry_legacy": "PASS",
+  "resource_parity": "PASS",
+  "private_sac_regression": "NOT_RUN_HISTORICAL_88_NOT_RECOUNTED",
+  "benchmark112": "NOT_RUN_FROZEN",
+  "model_calls": 0,
+  "source_run_receipts": [
+    {
+      "name": "staging_pytest_v3",
+      "exit_code": 0,
+      "seconds": 7.628
+    },
+    {
+      "name": "staging_registry_v3",
+      "exit_code": 0,
+      "seconds": 0.22
+    },
+    {
+      "name": "staging_skills_v3",
+      "exit_code": 0,
+      "seconds": 0.234
+    },
+    {
+      "name": "staging_generic_change_request_v3",
+      "exit_code": 0,
+      "seconds": 0.222
+    },
+    {
+      "name": "staging_research_workflow_v3",
+      "exit_code": 0,
+      "seconds": 0.217
+    },
+    {
+      "name": "staging_sac_dispatch_v3",
+      "exit_code": 0,
+      "seconds": 0.251
+    },
+    {
+      "name": "staging_skill_evolution_v3",
+      "exit_code": 0,
+      "seconds": 0.481
+    }
+  ]
+}

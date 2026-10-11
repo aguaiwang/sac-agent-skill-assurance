@@ -1,0 +1,15 @@
+{
+  "name": "Agent Skill Governance V4",
+  "version": "4.0.0.dev5",
+  "release_kind": "PUBLIC_REFINEMENT_REVIEW_ONLY",
+  "rights_approved": "UNKNOWN",
+  "ready_to_publish": false,
+  "formal_promotion": false,
+  "frozen_core_changed": 0,
+  "runtime_prompt_changed": 0,
+  "github_pushed": false,
+  "baseline_zip_sha256": "a259dfc789ec5cc168155253d684645430d88446df4d9414d0e3b2ec5a9db130",
+  "legacy_source_copies": "REMOVED_FROM_THIS_PACKAGE_ONLY",
+  "frozen_history": "PRESERVED",
+  "test_receipt": "TEST_RECEIPT.json"
+}
