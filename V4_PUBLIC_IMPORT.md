@@ -47,3 +47,15 @@ V4 的 330 项公开回归、四个合成示例和两套 Registry 在 PR 提交�
 冻结源包 `risk_models.py` 自带一个文件末尾空行，默认 `git diff --check` 提示该既有格式问题；为保持源包字节与冻结哈希，不修改该文件。排除 `blank-at-eof` 后的差异检查通过，无其他空白问题。V4公开包原有技术扫描的精确负向测试例外原样保留。
 
 不申请正式Candidate晋升，不执行生产操作，不生成新的真实模型回答。远程GitHub Actions由PR触发，其结果与上述本地结果分开看待。
+
+## 2026-10-12：中性用例与展示文档修订
+
+源包：`Agent_Skill_Governance_V4_PUBLIC_NEUTRAL_CASES_20261012.zip`；SHA256：`3c37609e42f44dcbb03ee1a20bbcdc6f0717da54689fa75860dbd94717dc7dc7`。仍为4.0.0.dev5，不升dev6，不改变正式晋升门槛。
+
+相对前一源包：新增2文件、删除3文件、修改14文件，124文件不变。主要是README、架构、自进化、SAC隔离集成复盘与评测说明；88条声明用例改名、移除审核字段，测试改用新路径并验证无人工审核仍为HOLD。case_id、text、authority、expected_label及text_sha256保持一致，不修改Gold业务内容或历史评分。
+
+提交前仅额外修正公开声明：说明fixture确有Schema变动；保留AI草拟且未经人工校准的制作来源；去掉无审核记录支持的人工质量结论；对齐用户已经确认的公开授权。对应文档的发布checksum重新计算；冻结Registry、Skill包哈希和生产代码不变。
+
+本修订在既有独立Python3.11测试环境再次运行330项pytest（330 passed，8.68秒）、四个合成示例、额外领域示例、两套Registry、3个Skill入口及14份资源副本，全部通过。此前分析阶段另在新建Python3.11环境从该源ZIP复验330/330、4/4、Registry、CRC、139项checksum及84个本地链接。未重跑私有SAC回归、HTTP或Benchmark112，未重新声明生产或RC1通过。
+
+旧版根目录V1、CI与Git历史保留。原公开文件处置说明、简短历史页以及旧名fixture从当前v4目录移出，前一提交和原ZIP仍可追溯；不覆盖历史实验原件。生成的缓存、构建产物和临时合成实验文件均不提交。

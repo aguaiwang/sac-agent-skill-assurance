@@ -11,7 +11,7 @@ from agent_governance.fingerprint import fingerprint
 from test_review_feedback import KEY, failed
 
 ROOT = Path(__file__).resolve().parents[1]
-ROWS = [json.loads(line) for line in (ROOT / 'docs/evolution/claim_gold_v2.jsonl').read_text(encoding='utf-8').splitlines()]
+ROWS = [json.loads(line) for line in (ROOT / 'docs/evolution/claim_synthetic_cases.jsonl').read_text(encoding='utf-8').splitlines()]
 
 
 @pytest.mark.parametrize('row', ROWS, ids=[r['case_id'] for r in ROWS])
@@ -19,9 +19,9 @@ def test_frozen_synthetic_claim_contract(row):
     assert ClaimVerifierV2().verify(row['text'], row['authority']).verdict == row['expected_label']
 
 
-def test_ai_labels_never_count_as_human_calibration():
+def test_unverified_synthetic_cases_cannot_unlock_calibration():
     assert len(ROWS) >= 80
-    assert all(r['label_origin'] == 'AI_AUTHORED_PENDING_HUMAN_REVIEW' for r in ROWS)
+    assert all('label_origin' not in r and 'reviewer_id' not in r for r in ROWS)
     audit = dict(isolation='PASS', unique_case_families=40, total=80, semantic_family_review='PENDING')
     result = calibration_gate(ROWS, [], audit)
     assert result['status'] == 'HOLD'

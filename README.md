@@ -4,6 +4,8 @@
 
 最新 `4.0.0.dev5` 公开展示工程位于 [`v4/`](v4/README.md)。本仓库根目录的 V1 包、源码、测试和历史保持原有入口；V4 使用独立的 `agent-action-governance` 包及 `agent_governance` 命名空间，**不是 V1 的直接兼容替换**。
 
+2026-10-12展示修订补充SAC集成复盘及自进化说明，将公开声明用例改为中性fixture命名；冻结源码、Skill、Prompt、Registry和正式门槛保持不变。
+
 ```bash
 cd v4
 python -m venv .venv
